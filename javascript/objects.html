@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car={
+            brand:"toyota",
+            model:"camry",
+            year:2022,
+            color:"blue"
+            start:function(){
+                return this brandi+" "+this.model+"is starting!";
+            }
+        };
+        document.write("car brand:"+car.brand+"<br>");
+        document.write("carmodel:"+car["model"]+"<br>");
+        document.write("year:"+car.year+"<br>");
+        document.write(car.start());
+    </script>
+    "car brand: toyota"
+    <br>
+    "car model:camry"
+    <br>
+    "year:2023"
+    <br>
+    "toyoto camry is starting!"
+</body>
+</html>

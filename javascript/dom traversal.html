@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>Heading</h1>
+        <p>paragraph1</p>
+        <p id="target">paragraph2</p>
+        <p>paragraph3</p>
+    </div>
+    <script>
+        const elem = document.getElementById("target");
+        console.log("parentElement:",elem.parentElement.id);
+        constchchildren=elem.parentElement.children;
+        console.log("children",children);
+        console.log("firstchild:",elem.parentElement.firstElementChild.innerText);
+        console.log("lastchild:",elem.parentElement.lastElementChild.innerText);
+        console.log("previous sibling:",elem.previousElementSibling.innerText);
+        console.log("next sibling:",elem.nextElementSibling.innerText);
+        console.log("previousSibling(might be text:)",elem.previousSibling);
+        console.log("childNodes(include text):",elem.parentElement.childNodes);
+
+    </script>
+</body>
+</html>

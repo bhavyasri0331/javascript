@@ -1,0 +1,1 @@
+const names = ["spongebob","patrick","squidward","cummins"];

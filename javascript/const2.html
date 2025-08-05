@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter</title>
+</head>
+<body>
+
+  <h2>Counter: <span id="count">0</span></h2>
+
+  <button onclick="increment()">Increment</button>
+  <button onclick="decrement()">Decrement</button>
+  <button onclick="reset()">Reset</button>
+  <button onclick="makelightpink()">change background green</button>
+
+
+
+
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      document.getElementById("count").textContent = count;
+    }
+
+    function increment() {
+      count++;
+      updateDisplay();
+      document.body.style.backgroundColor="blue";
+    }
+
+    function decrement() {
+      count--;
+      updateDisplay();
+      document.body.style.backgroundColor="yellow";
+    }
+
+    function reset() {
+      count = 0;
+      updateDisplay();
+      document.body.style.backgroundColor="pink";
+    }
+
+     function makelightpink()
+        {
+            document.body.style.backgroundColor="Cyan";
+        }
+
+  </script>
+
+</body>
+</html>

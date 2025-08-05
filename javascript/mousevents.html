@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Events</title>
+    <script type="text/javascript">
+        function siri() {
+            alert("hey guys");
+        }
+
+        function alexa() {
+            alert("how are you");
+        }
+
+        function bhavya() {
+            alert("mouse out of the button");
+        }
+
+        function sri() {
+            alert("mouse down on the button");
+        }
+
+        function it() {
+            alert("mouse up on the button");
+        }
+
+        function mrec() {
+            alert("mouse move over the button");
+        }
+
+        function section() {
+            alert("right click on the button");
+        }
+    </script>
+</head>
+<body>
+    <h3>Mouse Events</h3>
+    <button onclick="siri()">Click me</button>
+    <button onmouseover="alexa()">Mouse over me</button>
+    <button onmouseout="bhavya()">Mouse out</button>
+    <button onmousedown="sri()">Mouse down</button>
+    <button onmouseup="it()">Mouse up</button>
+    <button onmousemove="mrec()">Mouse move</button>
+    <button oncontextmenu="section(); return false;">Right click</button>
+</body>
+</html>

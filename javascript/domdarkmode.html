@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(88, 168, 141);
+            color: rgb(195, 40, 40);
+            transition: all cubic-bezier(0.25,0.46,0.45,0.98);
+        }
+        .dark-mode{
+            background-color: rgb(43, 18, 203);
+            color: rgba(255, 255, 255, 0.63);
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <h2>welcome to my website</h2>
+    <p>this is light mode by default.</p>
+    <button onclick="toggledark()">toggle dark mode</button>
+    <script>
+        function toggledark(){
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>    
+</body>
+</html>

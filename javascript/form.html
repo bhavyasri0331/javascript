@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form handling</title>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="name" placeholder="enter your name">
+        <button type="submit" >submit</button>
+    </form>
+    <p id="result">hello,mrec!</p>
+    <script>
+        function handleSubmit(event){
+            event.preventDefault();
+            let name=document.getElementById("name").value;
+            document.getElementById("result").innerText="hello,"+name+ "!";
+        }
+    </script>
+</body>
+</html>
